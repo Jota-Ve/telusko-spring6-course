@@ -14,10 +14,19 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+# 1. Ignore everything inside the .idea folder by default
+.idea/**
 *.iws
 *.iml
 *.ipr
+# 2. Explicitly un-ignore the specific directories and files you want
+!.idea/codeStyles/
+!.idea/codeStyles/**
+!.idea/inspectionProfiles/
+!.idea/inspectionProfiles/**
+!.idea/vcs.xml
+!.idea/encodings.xml
+!.idea/compiler.xml
 
 ### NetBeans ###
 /nbproject/private/
