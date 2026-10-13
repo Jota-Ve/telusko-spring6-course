@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Environments ###
+.env*
+
 ### STS ###
 .apt_generated
 .classpath
@@ -44,3 +47,11 @@ build/
 ### Maven Wrappers ###
 mvnw
 mvnw.cmd
+
+### Bruno API Client
+# Dependencies
+node_modules
+
+# OS files
+.DS_Store
+Thumbs.db
