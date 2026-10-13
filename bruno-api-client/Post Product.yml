@@ -1,0 +1,24 @@
+info:
+  name: Post Product
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/products"
+  body:
+    type: json
+    data: |-
+      {
+        "productId": 103,
+        "productName": "Shure Mic",
+        "productPrice": 5000
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

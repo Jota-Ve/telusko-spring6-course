@@ -1,0 +1,27 @@
+opencollection: 1.0.0
+
+info:
+  name: "Telusko Spring Tutorial #15"
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  variables:
+    - name: baseUrl
+      value: localhost:8080
+      description: URL da aplicação web
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
